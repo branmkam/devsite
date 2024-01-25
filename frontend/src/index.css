@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: hsl(219, 74%, 8%);
+  margin: 0;
+}
+
+.tealshadow {
+  text-shadow: 1px 3px 4px rgb(0, 109, 128);
+}
+
+@layer components {
+ 
+}
