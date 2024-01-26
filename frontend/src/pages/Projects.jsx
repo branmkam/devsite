@@ -27,17 +27,17 @@ const sites = [
 export default function Projects() {
   return (
     <>
-      <p className="mt-8 text-center text-slate-200 text-3xl tealshadow">
+      <p className="mt-8 text-3xl  text-slate-200 tealshadow">
         See my <span className="text-teal-500">projects</span>
       </p>
-      <p className="tealshadow mt-4 mb-8 text-lg">
+      <p className="mt-4 mb-8 text-lg tealshadow">
         My projects utilize various technologies: most notably{" "}
         <span className="text-teal-500">
           {" "}
           React.js, Tailwind CSS, and Python.{" "}
         </span>
       </p>
-      <div className="w-full grid grid-cols-1 justify-center gap-2 md:grid-cols-3 mb-8">
+      <div className="grid items-center justify-center w-full grid-cols-1 gap-2 mb-8 md:grid-cols-3">
         {sites.map((s) => (
           <Card key={"card " + s.title}>
             <a
@@ -52,7 +52,9 @@ export default function Projects() {
               />
             </a>
             <div className="text-slate-200 p-4 h-[350px] overflow-y-auto overflow-x-hidden rounded-lg">
-              <p className="my-2 font-bold text-xl hover:text-white">{s.title}</p>
+              <p className="my-2 text-xl font-bold hover:text-white">
+                {s.title}
+              </p>
               <p>{s.description}</p>
             </div>
           </Card>

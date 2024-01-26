@@ -76,7 +76,7 @@ export default function Home(props) {
             <div className="flex flex-row items-center h-16 gap-2">
               <FontAwesomeIcon icon={faChartSimple} className="h-20" />
               <p className="m-4 text-sm text-right md:text-base tealshadow md:mx-12">
-                A keen data scientist who loves{" "}
+                A keen data scientist and web scraper who loves{" "}
                 <span className="text-teal-600">reading between the lines</span>
                 .
               </p>

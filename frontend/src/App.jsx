@@ -79,7 +79,7 @@ function App() {
       </div> */}
 
       {/* menu div */}
-      <div className="fixed z-50 p-2 bg-[#000000dd] rounded-lg top-2 left-2">
+      <div className="fixed z-50 p-2 bg-[#000000dd] text-lg md:text-2xl rounded-lg top-2 left-2">
         <div
           onClick={() => setMenu((m) => !m)}
           className="z-50 flex flex-row items-center gap-2 hover:cursor-pointer hover:text-teal-500"
