@@ -74,7 +74,6 @@ function App() {
           className="z-50 flex flex-row items-center gap-2 hover:cursor-pointer hover:text-teal-500"
         >
           <FontAwesomeIcon icon={faBars} />
-          <p>Menu</p>
         </div>
 
         {menu && (
@@ -127,7 +126,7 @@ function App() {
       {/* switch page */}
       <div
         className={
-          "w-full flex flex-col justify-center items-center " +
+          "flex flex-col justify-center items-center " +
           (page > 0 && "p-6")
         }
       >
