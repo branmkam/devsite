@@ -8,9 +8,14 @@ body {
 }
 
 .tealshadow {
-  text-shadow: 1px 3px 4px rgb(0, 109, 128);
+  text-shadow: 1px 2px 4px rgb(0, 109, 128);
 }
 
+.clipped1 {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); 
+}
+
+
 @layer components {
- 
+
 }
