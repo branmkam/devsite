@@ -103,7 +103,7 @@ export default function Home(props) {
 
       <div className="text-center w-full bg-[#000415] flex flex-col items-center gap-4 clipped1 p-6 pb-10">
         <p className="text-xl tealshadow">
-          Create stunning projects for a{" "}
+          Stunning and versatile projects for a{" "}
           <span className="text-yellow-500">variety</span> of needs.
         </p>
         <div className="flex flex-col items-center justify-center w-full gap-4 my-4 md:flex-row">
@@ -125,12 +125,12 @@ export default function Home(props) {
       </div>
 
       <div className="flex flex-col items-center justify-center w-full gap-8 px-6 py-12 bg-black md:flex-row clipped1">
-        <p className="text-xl text-center tealshadow">
-          Would you like to reach out or learn more?
+        <p className="text-xl text-center">
+          Would you like to <span className="text-yellow-500">reach out</span> or <span className="text-yellow-500">learn more</span>?
         </p>
         <div className="flex justify-center gap-4 mx-4 md:flex-row">
           <button className="px-4 py-2 text-xl text-teal-500 transition-colors duration-150 bg-slate-800 rounded-xl hover:text-slate-200 hover:bg-teal-600">
-            <a href="mailto:brankam126@gmail.com">Email me!</a>
+            <a href="mailto:brankam126@gmail.com">Email Me!</a>
           </button>
           <button
             onClick={() => setPage(3)}

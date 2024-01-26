@@ -5,19 +5,30 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import { faArrowLeft, faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Contact from "./pages/Contact";
 
 function App() {
   const [page, setPage] = useState(0);
   const [menu, setMenu] = useState(false);
 
+  {
+    /* helpers */
+  }
+  function setAndScroll(p) {
+    setPage(p);
+    window.scrollTo(0, 0);
+  }
+
   function renderSwitch(param) {
     switch (param) {
       case 0:
-        return <Home setPage={setPage} />;
+        return <Home setPage={setAndScroll} />;
       case 1:
         return <About />;
       case 2:
         return <Projects />;
+      case 3:
+        return <Contact />;
       default:
         return (
           <>
@@ -82,7 +93,7 @@ function App() {
               className="hover:text-teal-600 hover:cursor-pointer"
               onClick={() => {
                 setMenu((m) => !m);
-                setPage(0);
+                setAndScroll(0);
               }}
             >
               Home
@@ -91,7 +102,7 @@ function App() {
               className="hover:text-teal-600 hover:cursor-pointer"
               onClick={() => {
                 setMenu((m) => !m);
-                setPage(1);
+                setAndScroll(1);
               }}
             >
               About Me
@@ -100,7 +111,7 @@ function App() {
               className="hover:text-teal-600 hover:cursor-pointer"
               onClick={() => {
                 setMenu((m) => !m);
-                setPage(2);
+                setAndScroll(2);
               }}
             >
               My Projects
@@ -109,7 +120,7 @@ function App() {
               className="hover:text-teal-600 hover:cursor-pointer"
               onClick={() => {
                 setMenu((m) => !m);
-                setPage(3);
+                setAndScroll(3);
               }}
             >
               Contact/Resume
@@ -126,7 +137,7 @@ function App() {
       {/* switch page */}
       <div
         className={
-          "flex flex-col justify-center items-center " +
+          "flex flex-col w-full justify-center items-center " +
           (page > 0 && "p-6")
         }
       >
