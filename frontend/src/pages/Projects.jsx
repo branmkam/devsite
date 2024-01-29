@@ -26,8 +26,8 @@ const sites = [
 
 export default function Projects() {
   return (
-    <>
-      <p className="mt-8 text-3xl  text-slate-200 tealshadow">
+    <div className="flex flex-col items-center justify-center">
+      <p className="mt-4 text-3xl text-slate-200 tealshadow">
         See my <span className="text-teal-500">projects</span>
       </p>
       <p className="mt-4 mb-8 text-lg tealshadow">
@@ -60,6 +60,6 @@ export default function Projects() {
           </Card>
         ))}
       </div>
-    </>
+    </div>
   );
 }

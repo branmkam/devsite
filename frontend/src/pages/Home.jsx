@@ -1,12 +1,18 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5, faReact, faPython } from "@fortawesome/free-brands-svg-icons";
+import {
+  faHtml5,
+  faReact,
+  faPython,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 import tailwind from "../assets/tailwind.svg";
 import testvid from "../assets/testvid.mp4";
-import { faFlask } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-regular-svg-icons";
 import {
   faChartSimple,
   faCode,
   faComment,
+  faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 
 const icons = {
@@ -19,7 +25,7 @@ export default function Home(props) {
   const { setPage } = props;
   return (
     <>
-      <div className="text-center w-full h-[400px] flex flex-col clipped1">
+      <div className="text-center w-full h-[450px] clipped1">
         <div className="relative w-full h-full">
           <video
             className="absolute z-0 object-cover w-full h-full brightness-[30%]"
@@ -30,8 +36,8 @@ export default function Home(props) {
           >
             <source src={testvid} type="video/mp4" />
           </video>
-          <div className="relative z-10 flex flex-col items-center justify-center">
-            <p className="mt-8 text-3xl text-slate-200 tealshadow">
+          <div className="relative z-10 flex flex-col items-center justify-center h-full">
+            <p className="text-3xl text-slate-200 tealshadow">
               <span className="text-teal-500"> Brandon Kaminski</span>
             </p>
             <p className="mt-4 mb-8 text-lg text-center tealshadow">
@@ -42,16 +48,42 @@ export default function Home(props) {
               {Object.keys(icons).map((i) => (
                 <div
                   key={"icon" + i}
-                  className="flex flex-col justify-center w-1/6 gap-1 mx-2 md:w-1/5 md:w-24"
+                  className="flex flex-col justify-center w-1/6 gap-1 mx-2 md:w-1/5"
                 >
                   <FontAwesomeIcon icon={icons[i]} className="h-24" />
                   <p className="text-sm text-yellow-500 md:text-lg">{i}</p>
                 </div>
               ))}
-              <div className="flex flex-col w-1/6 gap-1 mx-2 md:w-1/5 md:w-24">
+              <div className="flex flex-col w-1/6 gap-1 mx-2 md:w-1/5">
                 <img className="h-24" src={tailwind} alt="tailwind logo"></img>
                 <p className="text-sm text-yellow-500 md:text-lg">Tailwind</p>
               </div>
+            </div>
+            <div className="flex items-center justify-center gap-8 m-4 md:flex-row">
+              <a href="mailto:brankam126@gmail.com">
+                <FontAwesomeIcon
+                  className="h-12 bg-transparent hover:text-teal-600"
+                  icon={faLinkedinIn}
+                />
+              </a>
+              <a
+                href="https://linkedin.com/in/brandon-kaminski"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  className="h-12 bg-transparent hover:text-teal-600"
+                  icon={faEnvelope}
+                />
+              </a>
+
+              <a href="#">
+                <FontAwesomeIcon
+                  onClick={() => setPage(3)}
+                  className="h-12 bg-transparent hover:text-teal-600"
+                  icon={faFile}
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -60,7 +92,7 @@ export default function Home(props) {
       <div className="flex flex-col items-center justify-center w-full gap-12 bg-black clipped1">
         <div className="relative w-full h-full">
           <img
-            className="absolute z-0 object-cover w-full h-full brightness-[4%]"
+            className="absolute z-0 object-cover w-full h-full brightness-[6%]"
             src="computer.jpeg"
           />
           <div className="relative z-10 flex flex-col items-center justify-center gap-12 p-6 py-12">
@@ -101,7 +133,7 @@ export default function Home(props) {
         </div>
       </div>
 
-      <div className="text-center w-full bg-[#000415] flex flex-col items-center gap-4 clipped1 p-6 pb-10">
+      <div className="text-center w-full bg-[#000415] flex flex-col items-center gap-4 clipped1 p-6 pb-16">
         <p className="text-xl tealshadow">
           Stunning and versatile projects for a{" "}
           <span className="text-yellow-500">variety</span> of needs.
@@ -122,23 +154,6 @@ export default function Home(props) {
         >
           See My Projects
         </button>
-      </div>
-
-      <div className="flex flex-col items-center justify-center w-full gap-8 px-6 py-12 bg-black md:flex-row clipped1">
-        <p className="text-xl text-center">
-          Would you like to <span className="text-yellow-500">reach out</span> or <span className="text-yellow-500">learn more</span>?
-        </p>
-        <div className="flex justify-center gap-4 mx-4 md:flex-row">
-          <button className="px-4 py-2 text-xl text-teal-500 transition-colors duration-150 bg-slate-800 rounded-xl hover:text-slate-200 hover:bg-teal-600">
-            <a href="mailto:brankam126@gmail.com">Email Me!</a>
-          </button>
-          <button
-            onClick={() => setPage(3)}
-            className="px-4 py-2 text-xl text-teal-500 transition-colors duration-150 bg-slate-800 rounded-xl hover:text-slate-200 hover:bg-teal-600"
-          >
-            See My Resume
-          </button>
-        </div>
       </div>
     </>
   );

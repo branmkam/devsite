@@ -1,15 +1,28 @@
 import "./index.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import { faArrowLeft, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Contact from "./pages/Contact";
 
 function App() {
   const [page, setPage] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
   const [menu, setMenu] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   {
     /* helpers */
@@ -24,7 +37,7 @@ function App() {
       case 0:
         return <Home setPage={setAndScroll} />;
       case 1:
-        return <About />;
+        return <About setPage={setAndScroll} />;
       case 2:
         return <Projects />;
       case 3:
@@ -49,7 +62,7 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col items-center w-full h-full font-alata text-slate-200">
+    <div className="flex flex-col items-center w-full h-full sm:mt-14 font-alata text-slate-200">
       {/* header
       <div className="fixed top-0 z-50 flex flex-row items-start w-screen h-8 bg-black font-kanit text-slate-200 navbar">
         <span
@@ -79,18 +92,21 @@ function App() {
       </div> */}
 
       {/* menu div */}
-      <div className="fixed z-50 p-2 bg-[#000000dd] text-lg md:text-2xl rounded-lg top-2 left-2">
+      <div className="fixed z-50 p-2 sm:p-4 sm:flex sm:flex-row gap-2 mx-2 sm:m-0 sm:gap-1 bg-[#000000dd] rounded-lg sm:rounded-none sm:w-full top-2 left-2 sm:top-0 sm:left-0">
         <div
           onClick={() => setMenu((m) => !m)}
-          className="z-50 flex flex-row items-center gap-2 hover:cursor-pointer hover:text-teal-500"
+          className="z-50 flex flex-row items-center text-lg sm:hidden ap-2 md:text-2xl hover:cursor-pointer hover:text-teal-500"
         >
           <FontAwesomeIcon icon={faBars} />
         </div>
 
-        {menu && (
-          <div className="flex flex-col gap-1 mt-1">
+        {(!isMobile || menu) && (
+          <div className="flex flex-col sm:flex sm:flex-row sm:gap-8">
             <p
-              className="hover:text-teal-600 hover:cursor-pointer"
+              className={
+                "hover:text-teal-600 hover:cursor-pointer " +
+                (page == 0 && "text-yellow-500")
+              }
               onClick={() => {
                 setMenu((m) => !m);
                 setAndScroll(0);
@@ -99,7 +115,10 @@ function App() {
               Home
             </p>
             <p
-              className="hover:text-teal-600 hover:cursor-pointer"
+              className={
+                "hover:text-teal-600 hover:cursor-pointer " +
+                (page == 1 && "text-yellow-500")
+              }
               onClick={() => {
                 setMenu((m) => !m);
                 setAndScroll(1);
@@ -108,7 +127,10 @@ function App() {
               About Me
             </p>
             <p
-              className="hover:text-teal-600 hover:cursor-pointer"
+              className={
+                "hover:text-teal-600 hover:cursor-pointer " +
+                (page == 2 && "text-yellow-500")
+              }
               onClick={() => {
                 setMenu((m) => !m);
                 setAndScroll(2);
@@ -117,7 +139,10 @@ function App() {
               My Projects
             </p>
             <p
-              className="hover:text-teal-600 hover:cursor-pointer"
+              className={
+                "hover:text-teal-600 hover:cursor-pointer " +
+                (page == 3 && "text-yellow-500")
+              }
               onClick={() => {
                 setMenu((m) => !m);
                 setAndScroll(3);
