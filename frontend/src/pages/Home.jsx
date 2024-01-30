@@ -6,7 +6,10 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import tailwind from "../assets/tailwind.svg";
+import leaflet from "../assets/leaflet.svg";
 import testvid from "../assets/testvid.mp4";
+import pandas from "../assets/pandas.svg";
+
 import { faEnvelope, faFile } from "@fortawesome/free-regular-svg-icons";
 import {
   faChartSimple,
@@ -57,6 +60,14 @@ export default function Home(props) {
               <div className="flex flex-col w-1/6 gap-1 mx-2 md:w-1/5">
                 <img className="h-24" src={tailwind} alt="tailwind logo"></img>
                 <p className="text-sm text-yellow-500 md:text-lg">Tailwind</p>
+              </div>
+              <div className="flex flex-col w-1/6 gap-1 mx-2 md:w-1/5">
+                <img className="h-24" src={leaflet} alt="leaflet logo"></img>
+                <p className="text-sm text-yellow-500 md:text-lg">Leaflet</p>
+              </div>
+              <div className="flex flex-col w-1/6 gap-1 mx-2 md:w-1/5">
+                <img className="h-24" src={pandas} alt="leaflet logo"></img>
+                <p className="text-sm text-yellow-500 md:text-lg">Pandas</p>
               </div>
             </div>
             <div className="flex items-center justify-center gap-8 m-4 md:flex-row">

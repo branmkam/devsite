@@ -1,4 +1,5 @@
 import Card from "../components/Card";
+import HTMLReactParser from "html-react-parser";
 
 const sites = [
   {
@@ -7,6 +8,13 @@ const sites = [
       "A website I made for my musician alter ego. Built in React and Tailwind. To reach a wider audience, the site is translated and maintained in English, Spanish and Italian.",
     img: "https://brankam.com/brankambubbleonlyvector.png",
     url: "https://www.brankam.com",
+  },
+  {
+    title: "US cities quiz",
+    description:
+      "Modeled after Ian Fisher's originals at <a className='text-teal-500 hover:text-teal-200' href='https://cityquiz.io' rel='noreferrer' target='blank'>cityquiz.io</a>. Name as many US cities as you can, and view your stats such as smallest/largest cities named, percentage of total population, and more! Built using React, Leaflet, and Tailwind.",
+    img: "https://uscitiesquiz.netlify.app/assets/icon-L1K4f4jx.png",
+    url: "https://uscitiesquiz.netlify.app/",
   },
   // {
   //   title: "brankam",
@@ -55,7 +63,7 @@ export default function Projects() {
               <p className="my-2 text-xl font-bold hover:text-white">
                 {s.title}
               </p>
-              <p>{s.description}</p>
+              <p>{HTMLReactParser(s.description)}</p>
             </div>
           </Card>
         ))}
