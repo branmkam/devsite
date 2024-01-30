@@ -14,7 +14,8 @@ function App() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 640);
+      setIsMobile(window.innerWidth < 640); //set mobile based on pixel width
+      setMenu(window.innerWidth >= 640); //disable menu on back to mobile
     };
 
     window.addEventListener("resize", handleResize);

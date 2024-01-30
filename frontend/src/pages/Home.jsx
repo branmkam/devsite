@@ -28,7 +28,7 @@ export default function Home(props) {
   const { setPage } = props;
   return (
     <>
-      <div className="text-center w-full h-[450px] clipped1">
+      <div className="text-center w-full h-[500px] clipped1">
         <div className="relative w-full h-full">
           <video
             className="absolute z-0 object-cover w-full h-full brightness-[30%]"
@@ -39,7 +39,7 @@ export default function Home(props) {
           >
             <source src={testvid} type="video/mp4" />
           </video>
-          <div className="relative z-10 flex flex-col items-center justify-center h-full">
+          <div className="relative z-10 flex flex-col items-center justify-center w-full h-full">
             <p className="text-3xl text-slate-200 tealshadow">
               <span className="text-teal-500"> Brandon Kaminski</span>
             </p>
@@ -47,25 +47,25 @@ export default function Home(props) {
               Software Developer in Charlotte, NC
             </p>
 
-            <div className="flex flex-row justify-center m-4">
+            <div className="flex flex-row flex-wrap justify-center w-full mb-4 gap-y-2">
               {Object.keys(icons).map((i) => (
                 <div
                   key={"icon" + i}
-                  className="flex flex-col justify-center w-1/6 gap-1 mx-2 md:w-1/5"
+                  className="flex flex-col justify-center w-16 gap-1 mx-2"
                 >
                   <FontAwesomeIcon icon={icons[i]} className="h-24" />
                   <p className="text-sm text-yellow-500 md:text-lg">{i}</p>
                 </div>
               ))}
-              <div className="flex flex-col w-1/6 gap-1 mx-2 md:w-1/5">
+              <div className="flex flex-col w-20 gap-1 mx-2">
                 <img className="h-24" src={tailwind} alt="tailwind logo"></img>
                 <p className="text-sm text-yellow-500 md:text-lg">Tailwind</p>
               </div>
-              <div className="flex flex-col w-1/6 gap-1 mx-2 md:w-1/5">
+              <div className="flex flex-col w-16 gap-1 mx-2">
                 <img className="h-24" src={leaflet} alt="leaflet logo"></img>
                 <p className="text-sm text-yellow-500 md:text-lg">Leaflet</p>
               </div>
-              <div className="flex flex-col w-1/6 gap-1 mx-2 md:w-1/5">
+              <div className="flex flex-col w-16 gap-1 mx-2">
                 <img className="h-24" src={pandas} alt="leaflet logo"></img>
                 <p className="text-sm text-yellow-500 md:text-lg">Pandas</p>
               </div>

@@ -5,15 +5,15 @@ const sites = [
   {
     title: "brankam artist website",
     description:
-      "A website I made for my musician alter ego. Built in React and Tailwind. To reach a wider audience, the site is translated and maintained in English, Spanish and Italian.",
+      "A website I made for my musician alter ego. To reach a wider audience, the site is translated and maintained in English, Spanish and Italian. <br/><br/> Built in React and Tailwind.",
     img: "https://brankam.com/brankambubbleonlyvector.png",
     url: "https://www.brankam.com",
   },
   {
     title: "US cities quiz",
     description:
-      "Modeled after Ian Fisher's originals at <a className='text-teal-500 hover:text-teal-200' href='https://cityquiz.io' rel='noreferrer' target='blank'>cityquiz.io</a>. Name as many US cities as you can, and view your stats such as smallest/largest cities named, percentage of total population, and more! Built using React, Leaflet, and Tailwind.",
-    img: "https://uscitiesquiz.netlify.app/assets/icon-L1K4f4jx.png",
+      "A map-centric redesign of Ian Fisher's geography quizzes at <a className='text-teal-500 hover:text-teal-200' href='https://cityquiz.io' rel='noreferrer' target='blank'>cityquiz.io</a>. Name as many US cities as you can, and view your stats such as smallest/largest cities named, percentage of total population, and more! <br/><br/> Built using React, Leaflet, and Tailwind.",
+    img: "./uscities.png",
     url: "https://uscitiesquiz.netlify.app/",
   },
   // {
@@ -56,7 +56,7 @@ export default function Projects() {
             >
               <img
                 src={s.img}
-                className="hover:brightness-125 bg-[#ffffff66] h-[200px] object-cover w-full rounded-lg"
+                className="hover:brightness-75 bg-[#ffffff66] h-[200px] object-cover w-full rounded-lg"
               />
             </a>
             <div className="text-slate-200 p-4 h-[350px] overflow-y-auto overflow-x-hidden rounded-lg">
