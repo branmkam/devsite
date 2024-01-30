@@ -17,7 +17,6 @@ import {
   faChartSimple,
   faCode,
   faComment,
-  faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 
 const icons = {
@@ -62,15 +61,15 @@ export default function Home(props) {
                 </div>
               ))}
               <div className="flex flex-col w-16 gap-1 mx-2 sm:w-20">
-                <img className="h-24" src={tailwind} alt="tailwind logo"></img>
+                <img className="h-24" src={tailwind} alt="tailwind logo" />
                 <p className="text-sm text-yellow-500 md:text-lg">Tailwind</p>
               </div>
               <div className="flex flex-col w-12 gap-1 mx-2 sm:w-16">
-                <img className="h-24" src={leaflet} alt="leaflet logo"></img>
+                <img className="h-24" src={leaflet} alt="leaflet logo" />
                 <p className="text-sm text-yellow-500 md:text-lg">Leaflet</p>
               </div>
               <div className="flex flex-col w-12 gap-1 mx-2 sm:w-16">
-                <img className="h-24" src={pandas} alt="leaflet logo"></img>
+                <img className="h-24" src={pandas} alt="leaflet logo" />
                 <p className="text-sm text-yellow-500 md:text-lg">Pandas</p>
               </div>
             </div>
