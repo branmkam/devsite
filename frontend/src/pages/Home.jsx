@@ -77,7 +77,7 @@ export default function Home(props) {
               <a href="mailto:brankam126@gmail.com">
                 <FontAwesomeIcon
                   className="h-12 bg-transparent hover:text-teal-600"
-                  icon={faLinkedinIn}
+                  icon={faEnvelope}
                 />
               </a>
               <a
@@ -87,7 +87,7 @@ export default function Home(props) {
               >
                 <FontAwesomeIcon
                   className="h-12 bg-transparent hover:text-teal-600"
-                  icon={faEnvelope}
+                  icon={faLinkedinIn}
                 />
               </a>
 
