@@ -26,7 +26,7 @@ export default function About(props) {
       <p className="my-4 text-3xl font-bold text-center text-teal-500 tealshadow">
         Hi! My name is Brandon Kaminski...
       </p>
-      <div className="flex flex-col gap-6 mx-6 mt-2 mb-8">
+      <div className="flex flex-col gap-6 mx-6 mt-2 mb-8 lg:w-[800px]">
         <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
           <FontAwesomeIcon icon={faCode} className="w-20 h-20 text-teal-500" />
           <p>

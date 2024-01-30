@@ -139,7 +139,7 @@ export default function Home(props) {
 
             <button
               onClick={() => setPage(1)}
-              className="w-1/2 px-4 py-2 text-xl text-blue-900 transition-colors duration-150 bg-yellow-500 rounded-xl hover:text-slate-200 hover:bg-teal-600"
+              className="w-1/2 px-4 py-2 text-xl text-blue-900 transition-colors duration-150 bg-yellow-500 sm:w-80 rounded-xl hover:text-slate-200 hover:bg-teal-600"
             >
               About Me
             </button>
@@ -164,7 +164,7 @@ export default function Home(props) {
         </div>
         <button
           onClick={() => setPage(2)}
-          className="w-1/2 px-4 py-2 text-xl text-blue-900 transition-colors duration-150 bg-yellow-500 rounded-xl hover:text-slate-200 hover:bg-teal-600"
+          className="w-1/2 px-4 py-2 text-xl text-blue-900 transition-colors duration-150 bg-yellow-500 sm:w-80 rounded-xl hover:text-slate-200 hover:bg-teal-600"
         >
           See My Projects
         </button>
