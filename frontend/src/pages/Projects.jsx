@@ -4,24 +4,24 @@ const sites = [
   {
     title: "brankam artist website",
     description:
-      "A website I made for my musician alter ego. Built in React and Tailwind.",
+      "A website I made for my musician alter ego. Built in React and Tailwind. To reach a wider audience, the site is translated and maintained in English, Spanish and Italian.",
     img: "https://brankam.com/brankambubbleonlyvector.png",
     url: "https://www.brankam.com",
   },
-  {
-    title: "brankam",
-    description:
-      "test test my websitedfgk jd klhfdjk hjkjhlsjkjgkghsgjkh jkhgkjsdfhlgsd ggldkdjfhgkjlhlkjdfhldsgkjhdddd ddddddddddddddfkjhsfdlsljgfhkljd lhgjdlhgj hdjkghdjglsdhjf ksjd hfjh kdfh kjs hkfhhf sjhkdfsdf aosflskhslkjsfhjksflfhl f kf j sfkslaf hksljf lslkdghj kgjdgklghljdhgl jkdhgdkljghldkghkjdh. dkjfgnkfdj n",
-    img: "https://media.istockphoto.com/id/1130161854/photo/aerial-of-downtown-charlotte-north-carolina-usa.jpg?s=612x612&w=0&k=20&c=z86XcQ_Dg39hoXZvUxAahRlyEgpcW5S4LPZ2gTlGKiM=",
-    url: "https://www.brankam.com",
-  },
-  {
-    title: "brankam",
-    description:
-      "test test my websitedfgk jd klhfdjk hjkjhlsjkjgkghsgjkh jkhgkjsdfhlgsd ggldkdjfhgkjlhlkjdfhldsgkjhdddd ddddddddddddddfkjhsfdlsljgfhkljd lhgjdlhgj hdjkghdjglsdhjf ksjd hfjh kdfh kjs hkfhhf sjhkdfsdf aosflskhslkjsfhjksflfhl f kf j sfkslaf hksljf lslkdghj kgjdgklghljdhgl jkdhgdkljghldkghkjdh. dkjfgnkfdj n",
-    img: "vite.svg",
-    url: "https://www.brankam.com",
-  },
+  // {
+  //   title: "brankam",
+  //   description:
+  //     "test test my websitedfgk jd klhfdjk hjkjhlsjkjgkghsgjkh jkhgkjsdfhlgsd ggldkdjfhgkjlhlkjdfhldsgkjhdddd ddddddddddddddfkjhsfdlsljgfhkljd lhgjdlhgj hdjkghdjglsdhjf ksjd hfjh kdfh kjs hkfhhf sjhkdfsdf aosflskhslkjsfhjksflfhl f kf j sfkslaf hksljf lslkdghj kgjdgklghljdhgl jkdhgdkljghldkghkjdh. dkjfgnkfdj n",
+  //   img: "https://media.istockphoto.com/id/1130161854/photo/aerial-of-downtown-charlotte-north-carolina-usa.jpg?s=612x612&w=0&k=20&c=z86XcQ_Dg39hoXZvUxAahRlyEgpcW5S4LPZ2gTlGKiM=",
+  //   url: "https://www.brankam.com",
+  // },
+  // {
+  //   title: "brankam",
+  //   description:
+  //     "test test my websitedfgk jd klhfdjk hjkjhlsjkjgkghsgjkh jkhgkjsdfhlgsd ggldkdjfhgkjlhlkjdfhldsgkjhdddd ddddddddddddddfkjhsfdlsljgfhkljd lhgjdlhgj hdjkghdjglsdhjf ksjd hfjh kdfh kjs hkfhhf sjhkdfsdf aosflskhslkjsfhjksflfhl f kf j sfkslaf hksljf lslkdghj kgjdgklghljdhgl jkdhgdkljghldkghkjdh. dkjfgnkfdj n",
+  //   img: "vite.svg",
+  //   url: "https://www.brankam.com",
+  // },
 ];
 
 export default function Projects() {

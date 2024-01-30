@@ -17,8 +17,10 @@ export default function About(props) {
         <span className="text-teal-500"> My passions and goals. </span>
       </p>
       <div className="flex flex-row items-center justify-center w-full gap-2 my-4 text-center">
-        <img className="w-1/2 sm:w-64 sm:h-64 rounded-xl" src="./headshot.jpg" />
-        <img className="w-1/2 sm:w-64 sm:h-64 rounded-xl" src="./headshot.jpg" />
+        <img
+          className="w-1/2 sm:w-64 sm:h-64 rounded-xl"
+          src="./headshot.jpg"
+        />
       </div>
 
       <p className="my-4 text-3xl font-bold text-center text-teal-500 tealshadow">
@@ -40,7 +42,10 @@ export default function About(props) {
         </div>
 
         <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
-          <FontAwesomeIcon icon={faCommentAlt} className="w-20 h-20 text-teal-500" />
+          <FontAwesomeIcon
+            icon={faCommentAlt}
+            className="w-20 h-20 text-teal-500"
+          />
           <p>
             Besides practicing programming languages, I absolutely love to learn
             spoken languages as well. I grew up monolingual in English, but due
