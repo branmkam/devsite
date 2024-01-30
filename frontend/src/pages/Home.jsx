@@ -4,6 +4,8 @@ import {
   faReact,
   faPython,
   faLinkedinIn,
+  faJs,
+  faCss3,
 } from "@fortawesome/free-brands-svg-icons";
 import tailwind from "../assets/tailwind.svg";
 import leaflet from "../assets/leaflet.svg";
@@ -19,8 +21,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const icons = {
-  HTML5: faHtml5,
   React: faReact,
+  JS: faJs,
+  HTML5: faHtml5,
+  CSS3: faCss3,
   Python: faPython,
 };
 
@@ -47,25 +51,25 @@ export default function Home(props) {
               Software Developer in Charlotte, NC
             </p>
 
-            <div className="flex flex-row flex-wrap justify-center w-full mb-4 gap-y-2">
+            <div className="flex flex-row flex-wrap justify-center w-full mb-4 gap-x-1.5 sm:gap-x-1 md:gap-x-3 gap-y-2">
               {Object.keys(icons).map((i) => (
                 <div
                   key={"icon" + i}
-                  className="flex flex-col justify-center w-16 gap-1 mx-2"
+                  className="flex flex-col justify-center w-12 gap-1 mx-4 sm:w-16"
                 >
                   <FontAwesomeIcon icon={icons[i]} className="h-24" />
                   <p className="text-sm text-yellow-500 md:text-lg">{i}</p>
                 </div>
               ))}
-              <div className="flex flex-col w-20 gap-1 mx-2">
+              <div className="flex flex-col w-16 gap-1 mx-2 sm:w-20">
                 <img className="h-24" src={tailwind} alt="tailwind logo"></img>
                 <p className="text-sm text-yellow-500 md:text-lg">Tailwind</p>
               </div>
-              <div className="flex flex-col w-16 gap-1 mx-2">
+              <div className="flex flex-col w-12 gap-1 mx-2 sm:w-16">
                 <img className="h-24" src={leaflet} alt="leaflet logo"></img>
                 <p className="text-sm text-yellow-500 md:text-lg">Leaflet</p>
               </div>
-              <div className="flex flex-col w-16 gap-1 mx-2">
+              <div className="flex flex-col w-12 gap-1 mx-2 sm:w-16">
                 <img className="h-24" src={pandas} alt="leaflet logo"></img>
                 <p className="text-sm text-yellow-500 md:text-lg">Pandas</p>
               </div>

@@ -4,13 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Contact() {
   return (
-    <div className="flex flex-col items-center justify-center w-full gap-4">
+    <div className="flex flex-col items-center justify-center w-full gap-8">
       <p className="mt-4 text-3xl text-center text-slate-200 tealshadow">
         Contact <span className="text-teal-500">me</span>...
       </p>
       <div className="flex flex-row gap-8">
         <a
-          className="text-lg underline tealshadow hover:text-teal-600"
+          className="mb-8 text-lg underline tealshadow hover:text-teal-600"
           href="mailto:brankam126@gmail.com"
         >
           <FontAwesomeIcon icon={faEnvelope} className="h-20" />
