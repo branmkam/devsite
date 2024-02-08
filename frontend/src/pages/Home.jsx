@@ -50,7 +50,7 @@ export default function Home(props) {
               Software Developer in Charlotte, NC
             </p>
 
-            <div className="flex flex-row flex-wrap justify-center w-full mb-4 gap-x-1.5 sm:gap-x-1 md:gap-x-3 gap-y-2">
+            <div className="text-center grid w-[350px] grid-cols-4 md:grid-cols-8 md:w-[768px] items-center justify-items-center justify-center mb-4 gap-x-1.5 sm:gap-x-1 md:gap-x-3 gap-y-2">
               {Object.keys(icons).map((i) => (
                 <div
                   key={"icon" + i}
