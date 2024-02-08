@@ -21,7 +21,7 @@ const sites = [
     description:
       "GeoGuessr, but in the air. Only provided with a satellite overhead view of a target city, guess cities one at a time to get a score based on number of guesses, proximity to the target, and identification of continent, country, etc. <br/><br/> This project includes my <b>FIRST</b> hand-built autocomplete and animated score tracker. <br/> <br/> Built with React, Leaflet, and Tailwind.",
     img: "./guessthecity.png",
-    url: "https://guessthecity.netlify.app/",
+    url: "https://guessthecity.brandonkaminski.dev/",
   },
   // {
   //   title: "brankam",
