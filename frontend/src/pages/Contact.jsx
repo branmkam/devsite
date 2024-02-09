@@ -31,7 +31,7 @@ export default function Contact() {
         My work, past and present. If it doesn&apos;t load, download it{" "}
         <span className="text-teal-500">
           {" "}
-          <a className="underline hover:text-white" href="#">
+          <a className="underline hover:text-white" rel="noreferrer" target="_blank" href="./RESUME020924.pdf">
             here
           </a>
         </span>
@@ -39,7 +39,7 @@ export default function Contact() {
       </p>
       <embed
         className="mb-8 w-full md:w-3/4 lg:w-5/8 h-72 md:h-[500px]"
-        src="https://ucmscdn.healthgrades.com/35/ba/7dbbc73c42ea9037e5eb20ab681b/healthgrades-2021-report-to-the-nation.pdf"
+        src="./RESUME020924.pdf"
         type="application/pdf"
       />
     </div>

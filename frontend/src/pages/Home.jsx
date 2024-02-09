@@ -44,7 +44,7 @@ export default function Home(props) {
           </video>
           <div className="relative z-10 flex flex-col items-center justify-center w-full h-full">
             <p className="text-3xl text-slate-200 tealshadow">
-              <span className="text-teal-500"> Brandon Kaminski</span>
+              <span className="text-teal-500">Brandon Kaminski</span>
             </p>
             <p className="mt-4 mb-8 text-lg text-center tealshadow">
               Software Developer in Charlotte, NC
