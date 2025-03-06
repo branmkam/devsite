@@ -10,6 +10,20 @@ const sites = [
     url: "https://www.brankam.com",
   },
   {
+    title: "GeoKanji",
+    description:
+      "Learn Japanese through geography! By internally implementing the Jisho dictionary, mouse over any prefecture or city in the country to see what its component kanji characters mean! <br/><br/> Built using React, Tailwind, Leaflet, and <a className='text-teal-500 hover:text-teal-200' href='https://jisho.org' target='_blank'>Jisho</a>.",
+    img: "./geokanji.png",
+    url: "https://geokanji.netlify.app/",
+  },
+  {
+    title: "LingBreak",
+    description:
+      "Breaking down language for all! Leveraging the power of ChatGPT, users can enter in a sentence in any language, and AI will not only translate it but also break it down into its component parts and explain what each part does. A glossary is embedded into the breakdown to familiarize non-linguists with a diverse array of linguistic terms. On desktop, you can even save breakdowns as CSVs to view in detail later! <br/><br/> Built using React, Tailwind, and ChatGPT.",
+      img: './lingbreak.png',
+      url: "https://lingbreak.netlify.app/",
+  },
+  {
     title: "US cities quiz",
     description:
       "A map-centric redesign of Ian Fisher's geography quizzes at <a className='text-teal-500 hover:text-teal-200' href='https://cityquiz.io' rel='noreferrer' target='blank'>cityquiz.io</a>. Name as many US cities as you can, and view your stats such as smallest/largest cities named, percentage of total population, and more! <br/><br/> Built using React, Leaflet, and Tailwind.",
@@ -23,6 +37,7 @@ const sites = [
     img: "./guessthecity.png",
     url: "https://guessthecity.brandonkaminski.dev/",
   },
+
   // {
   //   title: "brankam",
   //   description:
