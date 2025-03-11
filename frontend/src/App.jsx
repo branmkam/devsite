@@ -157,7 +157,7 @@ function App() {
 
       {/* footer */}
       <div className="z-50 bg-[#00000088] rounded-lg p-2 fixed bottom-0 right-0">
-        <p className="text-[12px]">Brandon Kaminski | 2024</p>
+        <p className="text-[12px]">Brandon Kaminski | 2025</p>
       </div>
 
       {/* switch page */}
