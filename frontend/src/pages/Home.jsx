@@ -4,6 +4,7 @@ import {
   faReact,
   faPython,
   faLinkedinIn,
+  faGithub,
   faJs,
   faCss3,
 } from "@fortawesome/free-brands-svg-icons";
@@ -74,6 +75,16 @@ export default function Home(props) {
               </div>
             </div>
             <div className="flex items-center justify-center gap-8 m-4 md:flex-row">
+            <a
+                href="https://github.com/branmkam"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  className="h-12 bg-transparent hover:text-teal-600"
+                  icon={faGithub}
+                />
+              </a>
               <a href="mailto:brankam126@gmail.com">
                 <FontAwesomeIcon
                   className="h-12 bg-transparent hover:text-teal-600"
@@ -90,14 +101,13 @@ export default function Home(props) {
                   icon={faLinkedinIn}
                 />
               </a>
-
               <a href="#">
                 <FontAwesomeIcon
                   onClick={() => setPage(3)}
                   className="h-12 bg-transparent hover:text-teal-600"
                   icon={faFile}
                 />
-              </a>
+              </a>     
             </div>
           </div>
         </div>

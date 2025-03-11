@@ -1,4 +1,4 @@
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -9,6 +9,14 @@ export default function Contact() {
         Contact <span className="text-teal-500">me</span>...
       </p>
       <div className="flex flex-row gap-8">
+        <a
+          className="mb-8 text-lg underline tealshadow hover:text-teal-600"
+          href="https://github.com/branmkam"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faGithub} className="h-20" />
+        </a>
         <a
           className="mb-8 text-lg underline tealshadow hover:text-teal-600"
           href="mailto:brankam126@gmail.com"
@@ -31,7 +39,12 @@ export default function Contact() {
         My work, past and present. If it doesn&apos;t load, download it{" "}
         <span className="text-teal-500">
           {" "}
-          <a className="underline hover:text-white" rel="noreferrer" target="_blank" href="./RESUME 030625.pdf">
+          <a
+            className="underline hover:text-white"
+            rel="noreferrer"
+            target="_blank"
+            href="./RESUME 030625.pdf"
+          >
             here
           </a>
         </span>
