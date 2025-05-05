@@ -48,7 +48,7 @@ export default function Home(props) {
               <span className="text-teal-500">Brandon Kaminski</span>
             </p>
             <p className="mt-4 mb-8 text-lg text-center tealshadow">
-              Software Developer in Charlotte, NC
+              Software Developer in Raleigh, NC
             </p>
 
             <div className="text-center grid w-[350px] grid-cols-4 md:grid-cols-8 md:w-[768px] items-center justify-items-center justify-center mb-4 gap-x-1.5 sm:gap-x-1 md:gap-x-3 gap-y-2">

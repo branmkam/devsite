@@ -30,7 +30,7 @@ export default function About(props) {
         <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
           <FontAwesomeIcon icon={faCode} className="w-20 h-20 text-teal-500" />
           <p>
-            and I'm a software developer currently living in Charlotte. My alma
+            and I'm a software developer currently living in Raleigh. My alma
             mater is UNC Chapel Hill, class of 2023 (so go Heels). I graduated
             with degrees in Computer Science, BS and Linguistics, BA. I chose
             this career path because to me, software engineering is a perfect
