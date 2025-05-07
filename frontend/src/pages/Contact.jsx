@@ -43,7 +43,7 @@ export default function Contact() {
             className="underline hover:text-white"
             rel="noreferrer"
             target="_blank"
-            href="./RESUME 030625.pdf"
+            href="./RESUME 050625.pdf"
           >
             here
           </a>
@@ -52,7 +52,7 @@ export default function Contact() {
       </p>
       <embed
         className="mb-8 w-full md:w-3/4 lg:w-5/8 h-72 md:h-[500px]"
-        src="./RESUME 030625.pdf"
+        src="./RESUME 050625.pdf"
         type="application/pdf"
       />
     </div>
