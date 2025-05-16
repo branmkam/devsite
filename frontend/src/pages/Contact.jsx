@@ -52,7 +52,7 @@ export default function Contact() {
       </p>
       <embed
         className="mb-8 w-full md:w-3/4 lg:w-5/8 h-72 md:h-[500px]"
-        src="./RESUME 050625.pdf"
+        src="./RESUME 050925.pdf"
         type="application/pdf"
       />
     </div>
